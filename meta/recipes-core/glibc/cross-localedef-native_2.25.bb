@@ -38,6 +38,7 @@ SRC_URI = "${GLIBC_GIT_URI};branch=${SRCBRANCH};name=glibc \
            file://0025-Define-DUMMY_LOCALE_T-if-not-defined.patch \
            file://0001-Include-locale_t.h-compatibility-header.patch \
            file://archive-path.patch \
+	   file://io-fwide.patch \
 "
 # Makes for a rather long rev (22 characters), but...
 #

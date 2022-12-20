@@ -9,6 +9,7 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d32239bcb673463ab874e80d47fae504\
 
 SRC_URI += "file://ac_config_links.patch \
             file://remove-gets.patch \
+	    file://freadahead.patch \
            "
 
 SRC_URI_append_class-target = "\

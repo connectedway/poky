@@ -40,6 +40,11 @@ SRC_URI += "\
 SRC_URI += "file://fallthrough.patch"
 SRC_URI_append_libc-musl = " file://0001-build-Provide-alternatives-for-glibc-assumptions-hel.patch "
 
+SRC_URI += " \
+    file://0004-fix-elf-size.patch \
+    file://f222ccb.diff \
+"
+
 # The buildsystem wants to generate 2 .h files from source using a binary it just built,
 # which can not pass the cross compiling, so let's work around it by adding 2 .h files
 # along with the do_configure_prepend()

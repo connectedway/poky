@@ -41,6 +41,11 @@ SRC_URI_append_class-native = " \
 
 SRC_URI =+ "http://wiki.qemu-project.org/download/${BP}.tar.bz2"
 
+SRC_URI += " \
+    file://gettid.patch \
+    file://stime.patch \
+"
+
 SRC_URI[md5sum] = "17940dce063b6ce450a12e719a6c9c43"
 SRC_URI[sha256sum] = "dafd5d7f649907b6b617b822692f4c82e60cf29bc0fc58bc2036219b591e5e62"
 

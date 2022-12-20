@@ -1,0 +1,13 @@
+diff --git a/backends/linux-core-note.c b/backends/linux-core-note.c
+index 5f06c896..9faae4c3 100644
+--- a/backends/linux-core-note.c
++++ b/backends/linux-core-note.c
+@@ -111,7 +111,7 @@ struct EBLHOOK(prstatus)
+   FIELD (INT, pr_fpvalid);
+ }
+ #ifdef ALIGN_PRSTATUS
+-  __attribute__ ((packed, aligned (ALIGN_PRSTATUS)))
++  attribute_packed __attribute__ ((aligned (ALIGN_PRSTATUS)))
+ #endif
+ ;
+ 

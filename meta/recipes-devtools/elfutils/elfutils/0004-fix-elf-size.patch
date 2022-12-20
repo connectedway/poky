@@ -1,0 +1,14 @@
+--- elfutils-0.168/libelf/libelfP.h	2022-12-20 10:46:37.561528395 -0600
++++ elfutils-0.168/libelf/libelfP.h.new	2022-12-20 10:55:13.549325888 -0600
+@@ -467,9 +467,9 @@
+    These functions cannot be marked internal since they are aliases
+    of the export elfXX_fsize functions.*/
+ extern size_t __elf32_msize (Elf_Type __type, size_t __count,
+-			     unsigned int __version);
++			     unsigned int __version) __attribute__ ((__const__));
+ extern size_t __elf64_msize (Elf_Type __type, size_t __count,
+-			     unsigned int __version);
++			     unsigned int __version) __attribute__ ((__const__));
+ 
+ 
+ /* Create Elf descriptor from memory image.  */
