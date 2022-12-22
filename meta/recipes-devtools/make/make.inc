@@ -6,6 +6,7 @@ HOMEPAGE = "http://www.gnu.org/software/make/"
 SECTION = "devel"
 
 SRC_URI = "${GNU_MIRROR}/make/make-${PV}.tar.bz2"
+SRC_URI += "file://alloca.patch"
 
 inherit autotools gettext pkgconfig texinfo
 

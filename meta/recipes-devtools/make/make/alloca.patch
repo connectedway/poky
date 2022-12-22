@@ -1,0 +1,11 @@
+--- make-4.2.1/glob/glob.c	2013-10-20 12:14:38.000000000 -0500
++++ make-4.2.1/glob/glob.c.new	2022-12-22 11:55:02.029711122 -0600
+@@ -52,7 +52,7 @@
+ #define GLOB_INTERFACE_VERSION 1
+ #if !defined _LIBC && defined __GNU_LIBRARY__ && __GNU_LIBRARY__ > 1
+ # include <gnu-versions.h>
+-# if _GNU_GLOB_INTERFACE_VERSION == GLOB_INTERFACE_VERSION
++# if _GNU_GLOB_INTERFACE_VERSION >= GLOB_INTERFACE_VERSION
+ #  define ELIDE_CODE
+ # endif
+ #endif
