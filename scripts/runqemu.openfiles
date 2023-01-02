@@ -1,3 +1,0 @@
-#!/bin/bash
-stty intr ^]
-runqemu $1 slirp nographic qemuparams="-device virtio-serial-device -chardev null,id=virtcon -device virtconsole,chardev=virtcon"
